@@ -5,6 +5,7 @@
 // HTMLCollection.prototype.forEach = Array.prototype.forEach;
 // NodeList.prototype.forEach = Array.prototype.forEach;
 const SVG = require('svgjs');
+require('svg.draggable.js');
 
 let selected_square = document.getElementById('selected-square');
 let board = SVG('chessboard')
@@ -36,37 +37,40 @@ for (let row = 0; row < 8; row++) {
     }
 }
 
-let pieces = ['rook', 'knight', 'bishop', 'queen', 'king', 'bishop', 'knight', 'rook'];
+let place_piece = function(data) {
+    const path = 'static/' + data.color + '_' + data.type + '.svg';
+    board
+        .image(path, 1, 1)
+        .move(data.col, data.row)
+        .addClass('piece')
+        .remember('col', data.col)
+        .remember('row', data.row)
+        .id('piece-' + file[data.col] + rank[data.row])
+        .draggable({
+            minX: 0,
+            minY: 0,
+            maxX: 8,
+            maxY: 8
+        });
+}
 
 // place pieces
+let pieces = ['rook', 'knight', 'bishop', 'queen', 'king', 'bishop', 'knight', 'rook'];
 for (let col = 0; col < 8; col++) {
-    // pawns
-    board
-        .image('static/white_pawn.svg', 1, 1)
-        .move(col, 6)
-        .addClass('piece')
-        .remember('col', col)
-        .remember('row', 6);
-
-    board
-        .image('static/black_pawn.svg', 1, 1)
-        .move(col, 1)
-        .addClass('piece')
-        .remember('col', col)
-        .remember('row', 1);
-
-    // other
-    board
-        .image('static/white_' + pieces[col] + '.svg', 1, 1)
-        .move(col, 7)
-        .addClass('piece')
-        .remember('col', col)
-        .remember('row', 7);
-
-    board
-        .image('static/black_' + pieces[col] + '.svg', 1, 1)
-        .move(col, 0)
-        .addClass('piece')
-        .remember('col', col)
-        .remember('row', 0);
+    place_piece({ color: 'white', type: 'pawn', row: 6, col: col });
+    place_piece({ color: 'black', type: 'pawn', row: 1, col: col });
+    place_piece({ color: 'white', type: pieces[col], row: 7, col: col });
+    place_piece({ color: 'black', type: pieces[col], row: 0, col: col });
 }
+
+board.path('m0 100 h25 v300 h50 v-300 h25 L50 0z')
+    .attr({
+        "fill-opacity": 0.85,
+        fill: "#ff0000",
+        "fill-rule": "evenodd"
+    })
+    .width(0.33)
+    .height(1)
+    .move(0.33, 0.5);
+
+SVG.get('piece-a7').front();
