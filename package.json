@@ -18,5 +18,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.7.8"
+  },
+  "dependencies": {
+    "svg.draggable.js": "^2.2.1",
+    "svgjs": "^2.6.2"
   }
 }

@@ -1,0 +1,71 @@
+   
+<svg 
+    xmlns='http://www.w3.org/2000/svg' 
+    xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%' viewBox='0 0 8 8' class="chess-board">
+    <style>        .board-square {            width: 2;            height: 2;        }                .white-square.good {            fill: #7D76EB;        }                .black-square.good {            fill: #67439F;        }                .white-square {            fill: antiquewhite;        }                .black-square {            fill: peru;        }    </style>
+    <!-- put some content in here -->
+    <rect x='0' y='0' width='2' height='2' class="white-square board-square" id="a8" data-square="a8"/>
+    <rect x='0' y='1' width='2' height='2' class="black-square board-square" id="a7" data-square="a7"/>
+    <rect x='0' y='2' width='2' height='2' class="white-square board-square" id="a6" data-square="a6"/>
+    <rect x='0' y='3' width='2' height='2' class="black-square board-square" id="a5" data-square="a5"/>
+    <rect x='0' y='4' width='2' height='2' class="white-square board-square" id="a4" data-square="a4"/>
+    <rect x='0' y='5' width='2' height='2' class="black-square board-square" id="a3" data-square="a3"/>
+    <rect x='0' y='6' width='2' height='2' class="white-square board-square" id="a2" data-square="a2"/>
+    <rect x='0' y='7' width='2' height='2' class="black-square board-square" id="a1" data-square="a1"/>
+    <rect x='1' y='0' width='2' height='2' class="black-square board-square" id="b8" data-square="b8"/>
+    <rect x='1' y='1' width='2' height='2' class="white-square board-square" id="b7" data-square="b7"/>
+    <rect x='1' y='2' width='2' height='2' class="black-square board-square" id="b6" data-square="b6"/>
+    <rect x='1' y='3' width='2' height='2' class="white-square board-square" id="b5" data-square="b5"/>
+    <rect x='1' y='4' width='2' height='2' class="black-square board-square" id="b4" data-square="b4"/>
+    <rect x='1' y='5' width='2' height='2' class="white-square board-square" id="b3" data-square="b3"/>
+    <rect x='1' y='6' width='2' height='2' class="black-square board-square" id="b2" data-square="b2"/>
+    <rect x='1' y='7' width='2' height='2' class="white-square board-square" id="b1" data-square="b1"/>
+    <rect x='2' y='0' width='2' height='2' class="white-square board-square" id="c8" data-square="c8"/>
+    <rect x='2' y='1' width='2' height='2' class="black-square board-square" id="c7" data-square="c7"/>
+    <rect x='2' y='2' width='2' height='2' class="white-square board-square" id="c6" data-square="c6"/>
+    <rect x='2' y='3' width='2' height='2' class="black-square board-square" id="c5" data-square="c5"/>
+    <rect x='2' y='4' width='2' height='2' class="white-square board-square" id="c4" data-square="c4"/>
+    <rect x='2' y='5' width='2' height='2' class="black-square board-square" id="c3" data-square="c3"/>
+    <rect x='2' y='6' width='2' height='2' class="white-square board-square" id="c2" data-square="c2"/>
+    <rect x='2' y='7' width='2' height='2' class="black-square board-square" id="c1" data-square="c1"/>
+    <rect x='3' y='0' width='2' height='2' class="black-square board-square" id="d8" data-square="d8"/>
+    <rect x='3' y='1' width='2' height='2' class="white-square board-square" id="d7" data-square="d7"/>
+    <rect x='3' y='2' width='2' height='2' class="black-square board-square" id="d6" data-square="d6"/>
+    <rect x='3' y='3' width='2' height='2' class="white-square board-square" id="d5" data-square="d5"/>
+    <rect x='3' y='4' width='2' height='2' class="black-square board-square" id="d4" data-square="d4"/>
+    <rect x='3' y='5' width='2' height='2' class="white-square board-square" id="d3" data-square="d3"/>
+    <rect x='3' y='6' width='2' height='2' class="black-square board-square" id="d2" data-square="d2"/>
+    <rect x='3' y='7' width='2' height='2' class="white-square board-square" id="d1" data-square="d1"/>
+    <rect x='4' y='0' width='2' height='2' class="white-square board-square" id="e8" data-square="e8"/>
+    <rect x='4' y='1' width='2' height='2' class="black-square board-square" id="e7" data-square="e7"/>
+    <rect x='4' y='2' width='2' height='2' class="white-square board-square" id="e6" data-square="e6"/>
+    <rect x='4' y='3' width='2' height='2' class="black-square board-square" id="e5" data-square="e5"/>
+    <rect x='4' y='4' width='2' height='2' class="white-square board-square" id="e4" data-square="e4"/>
+    <rect x='4' y='5' width='2' height='2' class="black-square board-square" id="e3" data-square="e3"/>
+    <rect x='4' y='6' width='2' height='2' class="white-square board-square" id="e2" data-square="e2"/>
+    <rect x='4' y='7' width='2' height='2' class="black-square board-square" id="e1" data-square="e1"/>
+    <rect x='5' y='0' width='2' height='2' class="black-square board-square" id="f8" data-square="f8"/>
+    <rect x='5' y='1' width='2' height='2' class="white-square board-square" id="f7" data-square="f7"/>
+    <rect x='5' y='2' width='2' height='2' class="black-square board-square" id="f6" data-square="f6"/>
+    <rect x='5' y='3' width='2' height='2' class="white-square board-square" id="f5" data-square="f5"/>
+    <rect x='5' y='4' width='2' height='2' class="black-square board-square" id="f4" data-square="f4"/>
+    <rect x='5' y='5' width='2' height='2' class="white-square board-square" id="f3" data-square="f3"/>
+    <rect x='5' y='6' width='2' height='2' class="black-square board-square" id="f2" data-square="f2"/>
+    <rect x='5' y='7' width='2' height='2' class="white-square board-square" id="f1" data-square="f1"/>
+    <rect x='6' y='0' width='2' height='2' class="white-square board-square" id="g8" data-square="g8"/>
+    <rect x='6' y='1' width='2' height='2' class="black-square board-square" id="g7" data-square="g7"/>
+    <rect x='6' y='2' width='2' height='2' class="white-square board-square" id="g6" data-square="g6"/>
+    <rect x='6' y='3' width='2' height='2' class="black-square board-square" id="g5" data-square="g5"/>
+    <rect x='6' y='4' width='2' height='2' class="white-square board-square" id="g4" data-square="g4"/>
+    <rect x='6' y='5' width='2' height='2' class="black-square board-square" id="g3" data-square="g3"/>
+    <rect x='6' y='6' width='2' height='2' class="white-square board-square" id="g2" data-square="g2"/>
+    <rect x='6' y='7' width='2' height='2' class="black-square board-square" id="g1" data-square="g1"/>
+    <rect x='7' y='0' width='2' height='2' class="black-square board-square" id="h8" data-square="h8"/>
+    <rect x='7' y='1' width='2' height='2' class="white-square board-square" id="h7" data-square="h7"/>
+    <rect x='7' y='2' width='2' height='2' class="black-square board-square" id="h6" data-square="h6"/>
+    <rect x='7' y='3' width='2' height='2' class="white-square board-square" id="h5" data-square="h5"/>
+    <rect x='7' y='4' width='2' height='2' class="black-square board-square" id="h4" data-square="h4"/>
+    <rect x='7' y='5' width='2' height='2' class="white-square board-square" id="h3" data-square="h3"/>
+    <rect x='7' y='6' width='2' height='2' class="black-square board-square" id="h2" data-square="h2"/>
+    <rect x='7' y='7' width='2' height='2' class="white-square board-square" id="h1" data-square="h1"/>
+</svg>
